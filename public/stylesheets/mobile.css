@@ -1,4 +1,8 @@
-/* Website Template by freewebsitetemplates.com */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
 body {
 	min-width: 0;
 }

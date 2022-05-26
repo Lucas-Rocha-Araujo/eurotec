@@ -1,4 +1,4 @@
-/* Website Template by freewebsitetemplates.com */
+
 @font-face {
 	font-family: 'poller_oneregular';
 	src: url('../fonts/pollerone/pollerone-webfont.eot');
@@ -49,7 +49,8 @@ p a:hover {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
-	width: 340px;
+	width: 275px;
+	
 }
 #header a.logo img {
 	border: 0;
@@ -384,10 +385,10 @@ p a:hover {
 	text-indent: -99999px;
 	width: 44px;
 }
-#footer div ul li #twitter {
+#footer div ul li #instagram {
 	background-position: 0 0;
 }
-#footer div ul li #twitter:hover {
+#footer div ul li #instagram:hover {
 	background-position: -44px 0;
 }
 #footer div ul li #facebook {
