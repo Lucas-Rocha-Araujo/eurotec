@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var ContatoController = require('../controllers/ContatoController');
 
-
-router.get('/', function(req, res) {
-  res.render('contato');
-});
+router.get('/', ContatoController.index);
 
 module.exports = router;

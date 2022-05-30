@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var GaleriaController = require('../controllers/GaleriaController');
 
-
-router.get('/', function(req, res) {
-  res.render('galeria');
-});
+router.get('/', GaleriaController.index);
 
 module.exports = router;

@@ -1,6 +1,6 @@
 const SobreController = {
     index: (req, res) => {
-        return res.send("sobre");
+        return res.render("sobre");
     }
 };
 

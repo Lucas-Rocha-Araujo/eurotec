@@ -1,6 +1,6 @@
 const GaleriaController = {
     index: (req, res) => {
-        return res.send("galeria");
+        return res.render("galeria");
     }
 };
 
