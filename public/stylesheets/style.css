@@ -79,7 +79,7 @@ p a:hover {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-#header ul li a:hover, #header ul li.selected a {
+#header ul li a:hover {
 	color: #0ba39c;
 }
 #body {
@@ -101,6 +101,7 @@ p a:hover {
 	background: #252525;
 	display: inline-block;
 	padding: 15px 28px 12px;
+	border-radius: 5px;
 }
 #body > div {
 	margin: 0 auto;
@@ -345,9 +346,13 @@ p a:hover {
 #footer {
 	background: #252525;
 	margin: 0;
-	padding: 36px 0 42px;
+	padding: 20px 0 20px 0;
+	border-radius: 5px;
 }
 #footer div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -355,57 +360,28 @@ p a:hover {
 }
 #footer div p {
 	color: #fff;
-	float: left;
-	line-height: 44px;
-	margin: 0 0 0 10px;
-	padding: 0;
-}
-#footer div ul {
-	display: block;
 	float: right;
-	margin: 0;
-	overflow: hidden;
+	
+	margin: 125px 0 0 80px;
 	padding: 0;
-	width: 256px;
 }
-#footer div ul li {
-	display: block;
-	float: left;
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
-	width: 44px;
+#footer div ul{
+	width: 200px;
 }
-#footer div ul li a {
-	background: url(../images/icons.jpg) no-repeat 0 0;
-	display: block;
-	height: 44px;
-	margin: 0;
-	padding: 0;
-	text-indent: -99999px;
-	width: 44px;
+#footer div ul li{
+	list-style-type: none ;
+	color: white;
+	margin: 10px;
+	font-size: 16px;
 }
-#footer div ul li #instagram {
-	background-position: 0 0;
+#footer div ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	transition:  all 0.3s ease;
+	
 }
-#footer div ul li #instagram:hover {
-	background-position: -44px 0;
-}
-#footer div ul li #facebook {
-	background-position: 0 -44px;
-}
-#footer div ul li #facebook:hover {
-	background-position: -44px -44px;
-}
-#footer div ul li #googleplus {
-	background-position: 0 -88px;
-}
-#footer div ul li #googleplus:hover {
-	background-position: -44px -88px;
-}
-#footer div ul li #pinterest {
-	background-position: 0 -132px;
-}
-#footer div ul li #pinterest:hover {
-	background-position: -44px -132px;
+#footer div ul li a:hover{
+	color: #0ba39c;
+	padding-left: 10px;
 }
