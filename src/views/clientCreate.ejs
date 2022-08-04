@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/styleAdm.css">
+  <title>Tabela</title>
+</head>
+
+<header>
+  <div>
+    <a href="/">Página Inicial</a> | <a href="/user">Clientes</a> | <a href="/user/create">Adicionar cliente</a>
+  </div>
+</header>
+
+<body>
+    <main id="user-create">
+        <h1>Adicionar usuário</h1>
+        <% if(locals.error){ %>
+          <h2 class="error-alert"><%= error.message %></h2>
+        <% } %>
+        <form action="/user/create" method="post" enctype="multipart/form-data">
+          <input type="text" name="oficina" placeholder="Oficina" required />
+          <input type="text" name="cliente" placeholder="Cliente" />
+          <input type="number" name="contato" placeholder="Contato" />
+          <input type="file" name="workshop" />
+          <button type="submit">Adicionar</button>
+        </form>
+      </main>
+</body>
+</html>

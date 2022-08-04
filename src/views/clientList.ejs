@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/styleAdm.css">
+  <title>Tabela</title>
+</head>
+
+<header>
+  <div>
+    <a href="/">Página Inicial</a> | <a href="/user">Clientes</a> | <a href="/user/create">Adicionar cliente</a>
+  </div>
+</header>
+
+<body>
+  <main id="user-list">
+    <h1>Lista de clientes</h1>
+    <% if (clients.length > 0) { %>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Oficina</th>
+            <th>Cliente</th>
+            <th>Contato</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for( let client of clients) { %>
+          <tr>
+            <td><%= client.oficina %> </td>
+            <td><%= client.nome %> </td>
+            <td><%= client.contato %> </td>
+            <td class="table-actions">
+              <a href="/client/<%= client.id %> " class="table-link-show">Visualizar</a>
+              <a href="/client/edit/<%= client.id %> " class="table-link-edit">Editar</a>
+              <a href="/client/delete/<%= client.id %> " class="table-link-delete">Excluir</a>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  <% }else { %>
+    <h2 class="error-alert"> Nenhum cliente encontrado</h2>
+  <%} %>
+  </main>
+</body>
+</html>

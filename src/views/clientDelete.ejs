@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/styleAdm.css">
+  <title>Tabela</title>
+</head>
+
+<header>
+  <div>
+    <a href="/">Página Inicial</a> | <a href="/user">Clientes</a> | <a href="/user/create">Adicionar cliente</a>
+  </div>
+</header>
+
+<body>
+  <main id="user-delete">
+    <h1>Deletar cliente</h1>
+    <% if(locals.client){ %>
+      <div>
+        <img src="<%= client.workshop %>" alt="avatar"/>
+        <span><%= client.oficina %></span>
+        <span><%= client.nome %></span>
+      </div>
+      <form action="/user/delete/<%= client.id %>?_method=delete" method="post">
+        <h2 class="error-alert">Deseja deletar esse cliente?</h2>
+        <a href="/user"><button type="button">Não</button></a>
+        <button type="submit">Sim</button>
+      </form>
+    <% } else {%>
+      <h2 class="error-alert">Cliente não encontrado!!!</h2>
+    <% } %>
+  </main>
+</body>
+</html>

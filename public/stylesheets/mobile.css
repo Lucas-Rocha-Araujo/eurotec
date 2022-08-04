@@ -163,6 +163,7 @@ body {
 }
 #body > ul li a img {
 	width: 98%;
+	border-radius: 5px;
 }
 #body > ul li a span {
 	padding: 15px 0;
