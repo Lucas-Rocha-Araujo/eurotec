@@ -374,6 +374,7 @@ p a:hover {
 	height: 280px;
 	border: 2px solid #575151 ;
 	border-radius: 5px;
+	flex-grow: 1;
 	transition: transform 0.1s linear;
 }
 .gallery-items:hover {
