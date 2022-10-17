@@ -114,6 +114,7 @@ body {
 }
 #body #featured img {
 	min-width: 750px;
+	height: 50vh;
 }
 #body #featured div {
 	left: 0;
