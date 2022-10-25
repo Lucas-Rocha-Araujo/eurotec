@@ -25,11 +25,11 @@ const ContatoController = {
       return res.render("contato", { title: "Contato", error: { message: "Preencha todos os campos" }, });
     } else{
       let info = await transporter.sendMail({
-        from: req.body.email,
+        from: process.env.HOST_USER,
         to: process.env.HOST_USER,
+        replyTo: req.body.email,
         subject: req.body.subject,
-        text: req.body.context,
-        
+        text: req.body.context
         });
         
         console.log("Message sent: %s", info.messageId);

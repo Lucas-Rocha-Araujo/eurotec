@@ -1,5 +1,5 @@
 
-@font-face {
+/* @font-face {
 	font-family: 'poller_oneregular';
 	src: url('../fonts/pollerone/pollerone-webfont.eot');
 	src: url('../fonts/pollerone/pollerone-webfont.eot?#iefix') format('embedded-opentype'),
@@ -14,7 +14,7 @@
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.woff') format('woff'),
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
-}
+} */
 
 body {
 	background: #fff;
@@ -90,7 +90,7 @@ p a:hover {
 #body h1 {
 	color: #fff;
 	display: inline;
-	font-family: poller_oneregular;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 35px;
 	font-weight: normal;
 	margin: 0;
@@ -119,7 +119,7 @@ p a:hover {
 	width: 560px;
 }
 #body > div .article h2 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -282,7 +282,7 @@ p a:hover {
 #body > ul li a {
 	color: #000;
 	display: block;
-	font-family: poller_oneregular;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: normal;
 	margin: 0;
